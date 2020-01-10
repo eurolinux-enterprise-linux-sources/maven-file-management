@@ -2,7 +2,7 @@
 
 Name:           maven-%{pkgname}
 Version:        1.2.1
-Release:        7%{?dist}
+Release:        8%{?dist}
 # Maven-shared defines file-management version as 1.2.2
 Epoch:          1
 Summary:        Maven File Management API
@@ -60,6 +60,9 @@ sed -i /testDeleteDanglingSymlink/,/assert/s/False/True/ `find -name FileSetUtil
 %doc LICENSE.txt
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1:1.2.1-8
+- Mass rebuild 2013-12-27
+
 * Fri Jun 28 2013 Mikolaj Izdebski <mizdebsk@redhat.com> - 1:1.2.1-7
 - Rebuild to regenerate API documentation
 - Resolves: CVE-2013-1571
